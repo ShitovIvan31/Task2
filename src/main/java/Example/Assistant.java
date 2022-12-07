@@ -1,3 +1,5 @@
+package Example;
+
 public class Assistant {
     public Camera getCamera() {
         Camera camera = new Camera();

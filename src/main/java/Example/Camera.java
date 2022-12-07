@@ -1,3 +1,5 @@
+package Example;
+
 public class Camera {
     private CameraRoll cameraRoll;
     public Camera() {
