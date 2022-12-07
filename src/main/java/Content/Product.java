@@ -4,12 +4,15 @@ package Content;
 public class Product {
     private int id;
     private String name;
-    private int cost;
+    private int price;
 
     public Product(){
         this.id = id;
         this.name = name;
-        this.cost = cost;
+        this.price = price;
+    }
+
+    public Product(int id, String name, int price) {
     }
 
     public int getId() {
@@ -29,15 +32,15 @@ public class Product {
     }
 
     public int getCost() {
-        return cost;
+        return price;
     }
     public void setCost() {
-        this.cost = cost;
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "id" + id + ",name =" + name + ",cost =" + cost;
+        return "id" + id + ",name =" + name + ",cost =" + price;
     }
 
 }

@@ -4,14 +4,11 @@ import Content.Product;
 
 import java.util.List;
 
-public class ProductRepository {
-    List<Product> getAllProducts() {
-        return null;
-    }
+public abstract class ProductRepository {
+    public abstract List<Product> getAllProducts();
 
-    Product getProductId(int id) {
-        return null;
-    }
+    public abstract Product getProductId(int id);
 
 
 }
+
