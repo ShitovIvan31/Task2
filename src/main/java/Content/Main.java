@@ -1,4 +1,4 @@
-package Main;
+package Content;
 
 import Content.Cart;
 import Repository.ForProductRepository;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("appContext");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
 
         ProductRepository productRepository = context.getBean("forProductRepository", ForProductRepository.class);
         System.out.println("Products: " + productRepository.getAllProducts());

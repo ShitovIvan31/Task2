@@ -9,16 +9,14 @@ import javax.annotation.PostConstruct;
 
 
 @Component
-public class ForProductRepository extends ProductRepository {
+public class ForProductRepository implements ProductRepository {
     private List<Product> products;
     public List<Product> getAllProducts() {
         return products;
     }
 
     public Product getProductId(int id) {
-        return products.stream().filter((p) ->
-                p.getId() == id
-        ).findFirst().orElse(null);
+        return products.stream().filter((p) -> p.getId() == id).findFirst().orElse(null);
     }
 
    @PostConstruct
