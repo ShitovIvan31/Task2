@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("appContext");
 
         ProductRepository productRepository = context.getBean("forProductRepository", ForProductRepository.class);
         System.out.println("Products: " + productRepository.getAllProducts());
