@@ -28,16 +28,16 @@ public class Product {
         this.name = name;
     }
 
-    public int getCost() {
+    public int getPrice() {
         return price;
     }
-    public void setCost() {
+    public void setPrice() {
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "id" + id + ",name =" + name + ",cost =" + price;
+        return "id= " + id + ",name= " + name + ",cost= " + price;
     }
 
 }

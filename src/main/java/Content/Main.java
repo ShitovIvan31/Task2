@@ -1,6 +1,5 @@
 package Content;
 
-import Content.Cart;
 import Repository.ForProductRepository;
 import Repository.ProductRepository;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,7 +19,6 @@ public class Main {
         ClientCart.addProduct(2);
         ClientCart.addProduct(4);
         ClientCart.addProduct(3);
-        ClientCart.deleteProduct(4);
         System.out.println("Client Cart: " + ClientCart.getProductInCart());
 
         context.close();
