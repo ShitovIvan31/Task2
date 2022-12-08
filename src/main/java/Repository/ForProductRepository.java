@@ -22,7 +22,7 @@ public class ForProductRepository extends ProductRepository {
     }
 
    @PostConstruct
-    private void init() {
+    private void Initialize() {
         products = new ArrayList<>(Arrays.asList(
                 new Product(1, "Apple", 25),
                 new Product(2, "Pineapple", 250),
